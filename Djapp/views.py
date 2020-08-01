@@ -33,8 +33,11 @@ class BookListView(generic.ListView):
     model = models.Book
     context_object_name = 'book_list'
     template_name = 'Djapp/book_list.html'
-class BookDetailView(generic.TemplateView):
+class BookDetailView(generic.DetailView):
     model = models.Book
     context_object_name = 'book'
     template_name = 'Djapp/book_detail.html'
-    
+class AuthorListView(generic.ListView):
+    model = models.Author
+    context_object_name = 'author_list'
+    template_name = 'Djapp/author_list.html'

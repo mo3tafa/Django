@@ -21,8 +21,8 @@
       {% block sidebar %}
       <ul class="sidebar-nav">
           <li><a href="{% url 'Djapp:index' %}">Home</a></li>
-          <li><a href="">All books</a></li>
-          <li><a href="">All authors</a></li>
+          <li><a href="{% url 'Djapp:books' %}">All books</a></li>
+          <li><a href="{% url 'Djapp:authors' %}">All authors</a></li>
           <li><a href="/admin/">Admin page</a></li>
       </ul>
      {% endblock %}
