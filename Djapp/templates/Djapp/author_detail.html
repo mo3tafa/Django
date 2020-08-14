@@ -1,0 +1,10 @@
+{% extends "Djapp/base_generic.html" %}
+
+{% block content %}
+  <h1>Author: {{author.last_name}}</h1>
+  <p>Authors first name: {{author.first_name}} </p>
+  <p>Date of birth: {{author.date_of_birth}}</p>
+  <p>Date of death: {{author.date_of_death}}</p>
+  <!-- <p><a href="{url 'Djapp:author-detail' author.id}"></a></p> -->
+
+{% endblock %}

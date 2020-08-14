@@ -7,10 +7,11 @@
     <ul>
 
       {% for author in author_list %}
-        <h1>Author: {{author.last_name}}</h1>
+        <h3><a href="{% url 'Djapp:author_detail' author.id %}">{{author.last_name}}</a></h3>
         <p>Authors first name: {{author.first_name}} </p>
         <p>Date of birth: {{author.date_of_birth}}</p>
         <p>Date of death: {{author.date_of_death}}</p>
+        <p>Id: {{author.pk}}</p>
       {% endfor %}
     </ul>
     {% else %}
